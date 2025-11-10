@@ -44,7 +44,8 @@ public class UserController {
     public String deleteUser(
             @RequestParam("id") Long id) {
         userService.delete(id);
-        return "redirect:/";
+//        return "redirect:/";
+        return "redirect:/users";
     }
 
 // убранан вся бизнес логика
